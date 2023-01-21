@@ -59,5 +59,17 @@
   flex-basis: 100%;
 }
 .abouttext {
-  flex-basis: 50%;
+  flex-basis: 100%;
+}
+
+@media (min-width: 730px) {
+  .abouttext {
+    flex-basis: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .abouttext {
+    flex-basis: 50%;
+  }
 }
