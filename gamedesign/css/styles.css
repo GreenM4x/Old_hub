@@ -1,0 +1,88 @@
+:root {
+  --Header: #313638;
+  --Light: #fcfcfc;
+  --Background1: #9bc1bc;
+  --Background2: #edd382;
+  --Background3: #ed6a5a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+svg {
+  z-index: 200;
+  position: relative;
+
+  /* Move down bcs of 1px offset bug */
+  bottom: -3px;
+}
+
+/* Allgemein gestaltung */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+  font-family: "Space Mono", monospace, "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  background-color: var(--Background1);
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* gestaltung vom generelem Inhalt */
+section {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+}
+
+.orangeBG {
+  background-color: var(--Background2);
+}
+.yellowBG {
+  background-color: var(--Background3);
+}
+
+.content {
+  max-width: 720px;
+  position: relative;
+  padding: 100px 10vw;
+}
+
+.content h1,
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+  color: var(--Light);
+}
+h1 + h2 {
+  margin: 0;
+}
+.content p {
+  font-size: large;
+  text-indent: 2em;
+}
+/* Generel flex  */
+
+.wrapper {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  order: 0;
+  flex-basis: 100%;
+}

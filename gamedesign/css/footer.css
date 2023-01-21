@@ -1,0 +1,53 @@
+/* footer gestaltung */
+footer {
+  display: flex;
+  justify-content: space-between;
+  z-index: 9999;
+  background-color: var(--Header);
+  margin: 0;
+  padding: 0;
+}
+
+footer p {
+  color: var(--Light);
+}
+
+footer div {
+  display: block;
+  margin: 1rem 2rem 1rem 2rem;
+  width: 10rem;
+}
+
+.social p {
+  text-align: center;
+}
+.social ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social ul li {
+  color: var(--Light);
+}
+
+.social ul li a {
+  text-decoration: none;
+  color: var(--Light);
+  text-align: center;
+  padding: 5px;
+}
+
+.social ul li a:hover {
+  color: var(--Background2);
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+.copyright p {
+  text-align: center;
+}

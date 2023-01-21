@@ -1,0 +1,136 @@
+/* welcome section */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome img {
+  width: 65%;
+  height: auto;
+}
+
+/* story section */
+
+.storyimg {
+  padding-top: 70px;
+  flex-basis: 90%;
+}
+
+.imgbg1 {
+  height: fit-content;
+  background-color: var(--Background3);
+  transform: rotate(-5deg);
+}
+.imgbg1 img {
+  transform: rotate(5deg);
+}
+
+.imgbg2 {
+  height: fit-content;
+  background-color: var(--Background3);
+  transform: rotate(5deg);
+}
+.imgbg2 img {
+  transform: rotate(-5deg);
+}
+
+.storytxt {
+  padding: 70px 20px 70px 20px;
+  flex-basis: 100%;
+}
+
+.txtorder {
+  order: 4;
+}
+
+/* Art section */
+
+.imgbg3 img {
+  transform: scale(0.9);
+  transform: rotate(5deg);
+}
+
+.artimg {
+  padding-top: 50px;
+  flex-basis: 70%;
+}
+
+.imgbg3 {
+  height: fit-content;
+  background-color: var(--Background1);
+  transform: rotate(-5deg);
+}
+
+.arttext {
+  flex-basis: 100%;
+  padding: 70px 20px 70px 20px;
+}
+
+/* Level Design Section */
+
+.imgbg4 img {
+  transform: scale(0.9);
+  transform: rotate(-5deg);
+}
+
+.imgbg4 {
+  height: fit-content;
+  background-color: var(--Background2);
+  transform: rotate(5deg);
+}
+
+.levelimg {
+  padding-top: 50px;
+  flex-basis: 70%;
+}
+
+.leveltext {
+  flex-basis: 100%;
+  padding: 70px 20px 70px 20px;
+}
+
+/* Responsive Design */
+
+@media (min-width: 730px) {
+  /* General Content */
+  .content {
+    padding: 100px 10vw;
+  }
+
+  /* story section */
+  .storyimg {
+    flex-basis: 50%;
+  }
+  .storytxt {
+    flex-basis: 40%;
+  }
+  .txtorder {
+    order: initial;
+  }
+
+  /* Art section */
+
+  .artimg {
+    flex-basis: 40%;
+  }
+
+  .arttext {
+    flex-basis: 50%;
+  }
+
+  /* Level Design Section */
+
+  .levelimg {
+    flex-basis: 40%;
+  }
+
+  .leveltext {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    padding: 100px 20vw;
+  }
+}
