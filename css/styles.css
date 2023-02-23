@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Space+Mono&display=swap");
 
 :root {
-  --color-dark: #1c1f2b;
-  --color-bg: #202433;
+  --color-dark: #181818;
+  --color-bg: #181818;
 }
 
 body {
@@ -13,12 +13,32 @@ body {
 }
 
 header {
-  background-color: var(--color-dark);
-  padding: 1em 0 1em;
+  display: flex;
+  justify-content: center;
 }
-h1,
+
+.wellcome {
+  max-width: 1000px;
+  padding: 5em 0;
+}
+.wellcome h1,
+.wellcome p {
+  color: aliceblue;
+  padding: 1em;
+  margin: 0;
+}
+.wellcome hr {
+  margin: 5% 20% 0 5%;
+}
+
+@media screen and (min-width: 1100px) {
+  .wellcome hr {
+    margin: 5% 20% 0 0;
+  }
+}
+
 h2 {
-  color: white;
+  color: aliceblue;
   text-align: center;
   margin: 0;
   letter-spacing: 1px;
@@ -29,6 +49,24 @@ h2 {
 h3 {
   font-size: 1.5em;
   padding: 1em;
+
+  display: inline-block;
+  position: relative;
+}
+h3::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 90%;
+  background: linear-gradient(
+      to left,
+      rgba(0, 183, 70, 0.431),
+      rgba(255, 255, 255, 0.063)
+    ),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  left: -20px;
+  bottom: -9px;
+  z-index: 1;
 }
 section {
   display: flex;
@@ -45,7 +83,6 @@ section {
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  align-items: flex-start;
 }
 
 .box {
@@ -57,7 +94,8 @@ section {
   width: 25em;
   background-color: var(--color-dark);
 
-  border-radius: 5px;
+  border: 1px solid rgb(228, 179, 255);
+  border-radius: 5%;
 }
 
 .box a {
@@ -72,7 +110,7 @@ section {
 }
 
 .box a p {
-  padding: 0 1em 0 1em;
+  padding: 1em 1em 0 1em;
 }
 .code_lg {
   text-align: center;
