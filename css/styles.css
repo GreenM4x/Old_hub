@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Space+Mono&display=swap");
 
 :root {
-  --color-dark: #181818;
-  --color-bg: #181818;
+  --color-dark: #000000;
+  --color-bg: #0f0f0f;
 }
 body,
 html {
@@ -61,15 +61,15 @@ h3::before {
   content: "";
   position: absolute;
   width: 75%;
-  height: 90%;
+  height: 130%;
   background: linear-gradient(
       to left,
       rgba(0, 183, 70, 0.431),
-      rgba(255, 255, 255, 0.063)
+      rgba(101, 172, 128, 0.431)
     ),
     url(https://grainy-gradients.vercel.app/noise.svg);
   left: -20px;
-  bottom: -9px;
+  bottom: -20px;
   z-index: 1;
 }
 section {
@@ -78,6 +78,7 @@ section {
 }
 .content {
   max-width: 1300px;
+  padding-bottom: 10em;
 }
 .grid {
   display: grid;
@@ -96,8 +97,6 @@ section {
   min-height: 5em;
   width: min(75%, 25em);
   background-color: var(--color-dark);
-
-  border: 1px solid rgb(228, 179, 255);
   border-radius: 5%;
 }
 
@@ -121,6 +120,19 @@ section {
 
 .descr {
   margin-top: 0;
+}
+
+footer {
+  background-color: var(--color-dark);
+  height: 10em;
+
+  display: flex;
+  align-items: center;
+}
+footer p {
+  color: aliceblue;
+  padding-left: 2em;
+  font-size: x-large;
 }
 
 @media screen and (min-width: 800px) {
