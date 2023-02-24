@@ -56,12 +56,13 @@ h3 {
   font-size: 1.5em;
   display: inline-block;
   position: relative;
+  z-index: 99999;
 }
 h3::before {
   content: "";
   position: absolute;
   width: 75%;
-  height: 130%;
+  height: 110%;
   background: linear-gradient(
       to left,
       rgba(0, 183, 70, 0.431),
@@ -69,7 +70,7 @@ h3::before {
     ),
     url(https://grainy-gradients.vercel.app/noise.svg);
   left: -20px;
-  bottom: -20px;
+  bottom: -25px;
   z-index: 1;
 }
 section {
