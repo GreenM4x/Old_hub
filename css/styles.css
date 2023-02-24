@@ -4,6 +4,10 @@
   --color-dark: #181818;
   --color-bg: #181818;
 }
+body,
+html {
+  overflow-x: hidden;
+}
 
 body {
   background-color: var(--color-bg);
@@ -18,7 +22,7 @@ header {
 }
 
 .wellcome {
-  max-width: 1000px;
+  max-width: 1300px;
   padding: 5em 0;
 }
 .wellcome h1,
@@ -39,13 +43,15 @@ header {
 
 h2 {
   color: aliceblue;
-  text-align: center;
   margin: 0;
   letter-spacing: 1px;
-}
-h2 {
   font-size: 2em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
 }
+
 h3 {
   font-size: 1.5em;
   padding: 1em;
@@ -73,8 +79,7 @@ section {
   justify-content: center;
 }
 .content {
-  max-width: 1000px;
-  padding: 5em 0;
+  max-width: 1300px;
 }
 .grid {
   display: grid;
@@ -91,7 +96,7 @@ section {
   justify-content: center;
 
   min-height: 5em;
-  width: 25em;
+  width: min(75%, 25em);
   background-color: var(--color-dark);
 
   border: 1px solid rgb(228, 179, 255);
@@ -126,7 +131,7 @@ section {
   }
 
   .box {
-    width: 20em;
+    width: 25em;
   }
 }
 
