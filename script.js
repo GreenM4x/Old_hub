@@ -1,11 +1,4 @@
-/* const themed = document.getElementsByClassName("themed");
-
-for (let theme of themed) {
-  theme.addEventListener("click", () => {
-    document.documentElement.classList.toggle("dark");
-  });
-} */
-
+//Funktion Theme [Dark to light]
 function myfunction(e) {
   const doc = document.documentElement;
   doc.classList.toggle("dark");
