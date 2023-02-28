@@ -5,14 +5,14 @@
 @import "footer.css";
 
 :root:not(.dark) {
-  --color-dark: #c3c3c3;
+  --color-dark: #d9d9d9;
   --color-bg: #f2f2f2;
-  --color-text: rgb(56, 56, 56);
+  --color-text: #000000;
 }
 :root.dark {
   --color-dark: #000000;
   --color-bg: #0f0f0f;
-  --color-text: aliceblue;
+  --color-text: #f2f2f2;
 }
 
 body,
