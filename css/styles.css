@@ -4,10 +4,17 @@
 @import "content.css";
 @import "footer.css";
 
-:root {
+:root:not(.dark) {
+  --color-dark: #c3c3c3;
+  --color-bg: #f2f2f2;
+  --color-text: rgb(56, 56, 56);
+}
+:root.dark {
   --color-dark: #000000;
   --color-bg: #0f0f0f;
+  --color-text: aliceblue;
 }
+
 body,
 html {
   overflow-x: hidden;

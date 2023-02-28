@@ -9,7 +9,7 @@ header {
 }
 .wellcome h1,
 .wellcome p {
-  color: aliceblue;
+  color: var(--color-text);
   padding: 1em;
   margin: 0;
 }
