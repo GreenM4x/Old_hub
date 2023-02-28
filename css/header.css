@@ -38,7 +38,7 @@ header {
   }
 }
 
-/*Hand Emoji wava anim*/
+/*Hand Emoji wava animation*/
 
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
