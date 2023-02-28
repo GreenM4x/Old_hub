@@ -16,9 +16,9 @@ function myfunction(e) {
 
   const img = e.currentTarget.querySelector("img");
   if (doc.classList.contains("dark")) {
-    img.src = "/svg/moon-bold.svg";
+    img.src = "./svg/moon-bold.svg";
   } else {
-    img.src = "/svg/sun-medium.svg";
+    img.src = "./svg/sun-medium.svg";
   }
 }
 const btn = document.querySelector(".btn");
