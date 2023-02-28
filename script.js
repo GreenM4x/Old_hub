@@ -1,6 +1,14 @@
+const themed = document.getElementsByClassName("themed");
+
+for (let theme of themed) {
+  theme.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+  });
+}
+
 /* import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
 
-const octokit = new Octokit({
+const octokit = new Octokit({ 
   auth: "",
 });
 

@@ -6,7 +6,7 @@ footer {
   align-items: center;
 }
 footer p {
-  color: aliceblue;
+  color: var(--color-text);
   padding-left: 2em;
   font-size: x-large;
 }

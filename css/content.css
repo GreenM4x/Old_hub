@@ -1,5 +1,5 @@
 h2 {
-  color: aliceblue;
+  color: var(--color-text);
   margin: 0;
   letter-spacing: 1px;
   font-size: 2em;
@@ -65,7 +65,7 @@ section {
   flex-direction: column;
   justify-content: space-around;
 
-  color: aliceblue;
+  color: var(--color-text);
   text-decoration: none;
   width: 100%;
   height: 100%;
