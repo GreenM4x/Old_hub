@@ -7,6 +7,7 @@ header {
   max-width: 1300px;
   padding: 5em 0;
 }
+
 .wellcome h1,
 .wellcome p {
   color: var(--color-text);
@@ -16,12 +17,28 @@ header {
 .wellcome hr {
   margin: 5% 20% 0 5%;
 }
+.header-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.btn {
+  margin-left: 30px;
+  background-color: transparent;
+  border: none;
 
+  cursor: pointer;
+}
+.btn img {
+  width: 40px;
+}
 @media screen and (min-width: 1100px) {
   .wellcome hr {
     margin: 5% 20% 0 0;
   }
 }
+
+/*Hand Emoji wava anim*/
 
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
