@@ -4,6 +4,7 @@
 @import "content.css";
 @import "footer.css";
 
+/* General styles */
 :root:not(.dark) {
   --color-dark: #ffffff;
   --color-bg: #f6f6f6;
