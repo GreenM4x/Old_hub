@@ -19,6 +19,7 @@
 body,
 html {
   overflow-x: hidden;
+  transition: all ease-out 0.2s;
 }
 
 body {
